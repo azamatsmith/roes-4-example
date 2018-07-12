@@ -11,9 +11,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@storybook/react": "^3.4.8",
     "prettier": "^1.13.7"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }
