@@ -15,8 +15,10 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^3.4.8",
     "@storybook/react": "^3.4.8",
-    "prettier": "^1.13.7"
+    "prettier": "^1.13.7",
+    "storybook-addon-jsx": "^5.3.0"
   },
   "eslintConfig": {
     "extends": "react-app"
