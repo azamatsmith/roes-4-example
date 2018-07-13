@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Button.css';
 
 export default class Button extends React.Component {
   static propTypes = {
@@ -11,9 +12,12 @@ export default class Button extends React.Component {
   };
 
   render() {
-    const {children, ...rest} = this.props;
+    const {children, className, ...rest} = this.props;
     return (
-      <button className="Button" {...rest}>
+      <button
+        className={`Button pv2 ph4 br1 bn white pointer ${className}`}
+        {...rest}
+      >
         {children}
       </button>
     );

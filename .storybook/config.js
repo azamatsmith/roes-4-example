@@ -1,7 +1,11 @@
-import {configure, setAddon} from '@storybook/react';
+import React from 'react';
+import {addDecorator, configure, setAddon} from '@storybook/react';
 import JSXAddon from 'storybook-addon-jsx';
+import centered from '@storybook/addon-centered';
 
 setAddon(JSXAddon);
+addDecorator(centered);
+addDecorator(story => <div className="sans-serif">{story()}</div>);
 
 const req = require.context('../src/components', true, /\.stories\.js$/);
 
