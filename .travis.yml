@@ -8,10 +8,10 @@ cache:
     - node_modules
 
   before_install:
-   #   - npm install -g codecov
+    - npm install -g codecov
   
   script:
     - yarn test -- --coverage
   
-   # after_success:
-  # - codecov --token=
+  after_success:
+    - codecov --token=79eaf5e6-088f-4232-830c-7e8acaf43475
