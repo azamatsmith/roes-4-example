@@ -25,5 +25,13 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "guppy": {
+    "id": "roes-4-example",
+    "name": "roes-4-example",
+    "type": "create-react-app",
+    "color": "#c41d00",
+    "icon": null,
+    "createdAt": 1531683454624
   }
 }

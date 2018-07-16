@@ -2,6 +2,7 @@ import React from 'react';
 import {addDecorator, configure, setAddon} from '@storybook/react';
 import JSXAddon from 'storybook-addon-jsx';
 import centered from '@storybook/addon-centered';
+import '../src/main.css';
 
 setAddon(JSXAddon);
 addDecorator(centered);

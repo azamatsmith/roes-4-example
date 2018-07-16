@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+export const inputStyles = 'db br1 pa2 ba b---near-black near-black';
+export const labelStyles = ' db mb2 near-black ';
+
 export default class Input extends React.Component {
   static propTypes = {
     id: PropTypes.string.isRequired,
@@ -13,14 +16,10 @@ export default class Input extends React.Component {
     const {id, label, ...rest} = this.props;
     return (
       <div className="Input">
-        <label className="db mb2 near-black" htmlFor={id}>
+        <label className={labelStyles} htmlFor={id}>
           {label}
         </label>
-        <input
-          className="db br1 pa2 ba b---near-black near-black"
-          id={id}
-          {...rest}
-        />
+        <input className={inputStyles} id={id} {...rest} />
       </div>
     );
   }
