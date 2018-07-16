@@ -1,0 +1,20 @@
+.Dropdown-box {
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08);
+}
+
+.Dropdown-box:before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #fff;
+  opacity: 1;
+  z-index: 0;
+}

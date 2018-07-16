@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import './Dropdown.css'
+import './Dropdown.css';
 
 export default class Dropdown extends React.Component {
   static propTypes = {
@@ -44,7 +44,7 @@ export default class Dropdown extends React.Component {
     ));
     return (
       <div
-        className="absolute ba b--light-gray shadow-1 ph3 mt1 flex flex-column"
+        className="Dropdown-box absolute glow ph3 mt2 flex flex-column mr1 z1"
         style={{left, width: dropdownWidth}}
       >
         {items}
@@ -56,17 +56,15 @@ export default class Dropdown extends React.Component {
     const {children} = this.props;
     const {show} = this.state;
     return (
-      <div className="Dropdown">
-        <div
-          className="Dropdown-wrapper relative pointer"
-          ref={el => (this.dropdownWrapper = el)}
-          onClick={this._handleClick}
-          onMouseEnter={() => this._handleHover(true)}
-          onMouseLeave={() => this._handleHover(false)}
-        >
-          {children}
-          {show && this._renderDropdown()}
-        </div>
+      <div
+        className="Dropdown relative pointer"
+        ref={el => (this.dropdownWrapper = el)}
+        onClick={this._handleClick}
+        onMouseEnter={() => this._handleHover(true)}
+        onMouseLeave={() => this._handleHover(false)}
+      >
+        {children}
+        {show && this._renderDropdown()}
       </div>
     );
   }

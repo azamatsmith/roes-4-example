@@ -1,3 +1,9 @@
 export {default as Button} from './Button';
+export {default as Header} from './Header';
 export {default as Icon} from './Icon';
 export {default as Input} from './Input';
+export {default as Select} from './Select';
+export {default as SideNav} from './SideNav';
+export {default as SideNavItem} from './SideNavItem';
+export {default as StatusText} from './StatusText';
+export {default as Profile} from './Profile';

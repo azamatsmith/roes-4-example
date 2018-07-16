@@ -1,4 +1,20 @@
+.flex-1 {
+  flex: 1;
+}
+
+.near-black {
+  color: #4a4a4a;
+}
+
 .blue {
+  color: #36a5ec;
+}
+
+.b--blue {
+  border-color: #36a5ec;
+}
+
+.hover-blue:hover {
   color: #36a5ec;
 }
 

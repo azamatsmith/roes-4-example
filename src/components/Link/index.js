@@ -10,9 +10,12 @@ export default class Link extends React.Component {
   static defaultProps = {};
 
   render() {
-    const {children, href, ...rest} = this.props;
+    const {children, className, href, ...rest} = this.props;
     return (
-      <a className="Link blue no-underline link hover-dark-blue f4" href={href}>
+      <a
+        className={`Link blue no-underline link hover-dark-blue ${className}`}
+        href={href}
+      >
         {children}
       </a>
     );
