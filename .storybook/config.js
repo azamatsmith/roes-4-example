@@ -1,12 +1,30 @@
 import React from 'react';
 import {addDecorator, configure, setAddon} from '@storybook/react';
 import JSXAddon from 'storybook-addon-jsx';
-import centered from '@storybook/addon-centered';
+import infoAddon, {setDefaults} from '@storybook/addon-info';
 import '../src/main.css';
 
+const infoAddonDefaults = {
+  inline: true,
+  text: true,
+  header: false,
+  source: true,
+  styles(stylesheet) {
+    return {
+      ...stylesheet,
+      infoPage: {
+        marginTop: '4rem',
+      },
+    };
+  },
+};
+
 setAddon(JSXAddon);
-addDecorator(centered);
-addDecorator(story => <div className="sans-serif">{story()}</div>);
+setDefaults(infoAddonDefaults);
+setAddon(infoAddon);
+addDecorator(story => (
+  <div className="sans-serif mv5 flex justify-center">{story()}</div>
+));
 
 const req = require.context('../src/components', true, /\.stories\.js$/);
 
