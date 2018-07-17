@@ -11,3 +11,4 @@ export {default as SideNavItem} from './SideNavItem';
 export {default as StatusText} from './StatusText';
 export {default as Profile} from './Profile';
 export {default as Table} from './Table';
+export {default as Tooltip} from './Tooltip';
