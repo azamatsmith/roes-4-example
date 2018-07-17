@@ -20,19 +20,19 @@ storiesOf('Table', module)
         </thead>
         <tbody>
           <Tr>
-            <Th>100</Th>
-            <Th>MAB</Th>
-            <Th>Blood Pressure Cuff</Th>
+            <Td>100</Td>
+            <Td>MAB</Td>
+            <Td>Blood Pressure Cuff</Td>
           </Tr>
           <Tr>
-            <Th>101</Th>
-            <Th>MAB</Th>
-            <Th>ZA3012</Th>
+            <Td>101</Td>
+            <Td>MAB</Td>
+            <Td>ZA3012</Td>
           </Tr>
           <Tr>
-            <Th>102</Th>
-            <Th>MAB</Th>
-            <Th>Glucose Meter</Th>
+            <Td>102</Td>
+            <Td>MAB</Td>
+            <Td>Glucose Meter</Td>
           </Tr>
         </tbody>
       </Table>
