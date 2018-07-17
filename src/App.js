@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Header, SideNav} from 'components';
+import {Header, SideNav, Footer} from 'components';
 import OrderHistory from 'features/OrderHistory';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -9,7 +10,10 @@ class App extends Component {
         <Header />
         <div className="flex">
           <SideNav />
-          <OrderHistory />
+          <div className="App-content">
+            <OrderHistory />
+            <Footer />
+          </div>
         </div>
       </div>
     );

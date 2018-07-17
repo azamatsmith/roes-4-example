@@ -55,10 +55,7 @@ export default class OrderHistory extends React.Component {
 
   render() {
     return (
-      <div
-        className="OrderHistory w-100 flex flex-column pa4"
-        style={{backgroundColor: '#f6f7f9'}}
-      >
+      <div className="OrderHistory w-100 flex flex-column pa4 bg-light-gray">
         <div className="flex mb4 justify-between items-center">
           <SelectedPatient
             name="Zuret, Susan"
