@@ -1,0 +1,9 @@
+.OrderHistory {
+  margin-left: 25%;
+  margin-top: 60px;
+}
+
+.OrderHistory .Table tr td:first-child,
+.OrderHistory .Table tr th:first-child {
+  padding-left: 2rem;
+}
