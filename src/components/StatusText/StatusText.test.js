@@ -28,6 +28,6 @@ describe('<StatusText />', () => {
       statusType: 'warning',
       children: <span>A warning</span>,
     });
-    expect(defaultWrapper.text()).toEqual('A warning');
+    expect(defaultWrapper.text()).toEqual('A serious warning');
   });
 });
