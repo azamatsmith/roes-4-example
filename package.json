@@ -20,6 +20,7 @@
     "@storybook/addon-a11y": "^3.4.8",
     "@storybook/addon-centered": "^3.4.8",
     "@storybook/addon-info": "^3.4.8",
+    "@storybook/addon-options": "^3.4.8",
     "@storybook/react": "^3.4.8",
     "@storybook/storybook-deployer": "^2.3.0",
     "prettier": "^1.13.7",
