@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-tippy": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,6 +20,7 @@
     "@storybook/addon-a11y": "^3.4.8",
     "@storybook/addon-centered": "^3.4.8",
     "@storybook/addon-info": "^3.4.8",
+    "@storybook/addon-options": "^3.4.8",
     "@storybook/react": "^3.4.8",
     "@storybook/storybook-deployer": "^2.3.0",
     "prettier": "^1.13.7",

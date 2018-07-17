@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Input.css';
 
-export const inputStyles = 'db br1 pa2 ba b---near-black near-black';
+export const inputStyles = 'db br1 pa2 near-black';
 export const labelStyles = ' db mb2 near-black ';
 
 export default class Input extends React.Component {
