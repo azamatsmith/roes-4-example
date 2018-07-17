@@ -11,7 +11,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <header
-        className="Header flex items-center justify-between vw-100 ph4"
+        className="Header flex items-center justify-between vw-100 ph4 w-100"
         style={{height: 60}}
       >
         <h3 className="white tracked fw5">ROES</h3>

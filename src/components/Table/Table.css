@@ -1,0 +1,17 @@
+.Table {
+  border-collapse: collapse;
+  border: 1px solid #e2e2e2;
+}
+
+thead .Tr {
+  background-color: #fff !important;
+}
+
+.Tr {
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fff;
+}
+
+.Tr:nth-child(odd) {
+  background-color: #fbfbfb;
+}

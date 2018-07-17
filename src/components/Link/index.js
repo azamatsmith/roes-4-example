@@ -15,6 +15,7 @@ export default class Link extends React.Component {
       <a
         className={`Link blue no-underline link hover-dark-blue ${className}`}
         href={href}
+        {...rest}
       >
         {children}
       </a>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {inputStyles, labelStyles} from '../Input';
+import {labelStyles} from '../Input';
 import './Select.css';
 
 export default class Select extends React.Component {
@@ -15,15 +15,17 @@ export default class Select extends React.Component {
   render() {
     const {children, id, label, ...rest} = this.props;
     return (
-      <div className="Select flex flex-column">
+      <div className="Select flex flex-column near-black">
         <label className={labelStyles} htmlFor={id}>
           {label}
         </label>
-        <div>
-          <select className="pa3 ba br0 b--purple bg-white" id={id} {...rest}>
-            {children}
-          </select>
-        </div>
+        <select
+          className="w-100 pv2 pl2 pr3 ba br1 bg-white near-black"
+          id={id}
+          {...rest}
+        >
+          {children}
+        </select>
       </div>
     );
   }

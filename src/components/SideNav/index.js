@@ -1,13 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import SideNavItem from '../SideNavItem';
 import './SideNav.css';
 
 export default class SideNav extends React.Component {
-  static propTypes = {};
-
-  static defaultProps = {};
-
   render() {
     return (
       <div className="SideNav w-25 flex flex-column">
@@ -26,6 +21,7 @@ export default class SideNav extends React.Component {
           <SideNavItem text="Audiogram Search" />
         </ul>
         <div className="flex-1 flex flex-column justify-end">
+          <div style={{backgroundColor: '#E2E2E2', height: 1}} />
           <SideNavItem text="Exit" />
         </div>
       </div>

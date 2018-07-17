@@ -13,7 +13,7 @@ export default class Profile extends React.Component {
     const {name, src} = this.props;
     return (
       <div className="Profile flex items-center">
-        <img className="br-100" src={src} />
+        <img alt={`${name} profile`} className="br-100" src={src} />
         <span className="white ml2">{name}</span>
       </div>
     );
