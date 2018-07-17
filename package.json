@@ -23,18 +23,12 @@
     "@storybook/addon-options": "^3.4.8",
     "@storybook/react": "^3.4.8",
     "@storybook/storybook-deployer": "^2.3.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "prettier": "^1.13.7",
     "storybook-addon-jsx": "^5.3.0"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "guppy": {
-    "id": "roes-4-example",
-    "name": "roes-4-example",
-    "type": "create-react-app",
-    "color": "#c41d00",
-    "icon": null,
-    "createdAt": 1531683454624
   }
 }
