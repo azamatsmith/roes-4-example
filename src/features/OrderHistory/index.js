@@ -1,14 +1,36 @@
 import React from 'react';
-import {Link, Select, StatusText} from 'components';
+import {Dropdown, Link, Select, StatusText} from 'components';
 import {Table, Tr, Td, Th} from 'components/Table';
 import SelectedPatient from './components/SelectedPatient';
 import data from './data';
 import './OrderHistory.css';
 
 export default class OrderHistory extends React.Component {
-  _renderItems = arr => <div>{arr[0].name}</div>;
+  _renderItems = arr =>
+    arr.length === 1 ? (
+      arr[0].name || 'N/A'
+    ) : (
+      <div>
+        {arr[0].name}{' '}
+        <Dropdown items={arr.map(e => e.name)}>
+          + {arr.length - 1} more
+        </Dropdown>
+      </div>
+    );
 
-  _renderSn = arr => <div>{arr[0].serialNumber || 'N/A'}</div>;
+  _renderSn = arr => {
+    const serialNumbers = arr.map(e => e.serialNumber || null).filter(e => e);
+    return !serialNumbers.length ? (
+      'N/A'
+    ) : (
+      <div>
+        {arr[0].serialNumber}{' '}
+        <Dropdown items={arr.map(e => e.serialNumber)}>
+          + {arr.length - 1} more
+        </Dropdown>
+      </div>
+    );
+  };
 
   _renderStatus = status => {
     const warningRe = /pend/i;
@@ -33,10 +55,7 @@ export default class OrderHistory extends React.Component {
 
   render() {
     return (
-      <div
-        className="OrderHistory w-100 flex flex-column pa4"
-        style={{backgroundColor: '#f6f7f9'}}
-      >
+      <div className="OrderHistory w-100 flex flex-column pa4 bg-light-gray">
         <div className="flex mb4 justify-between items-center">
           <SelectedPatient
             name="Zuret, Susan"

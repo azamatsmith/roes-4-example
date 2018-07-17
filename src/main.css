@@ -2,7 +2,18 @@
   flex: 1;
 }
 
+.light-gray {
+  color: #f6f7f9;
+}
+.bg-light-gray {
+  background-color: #f6f7f9;
+}
+
 .near-black {
+  color: #4a4a4a;
+}
+
+.bg-near-black {
   color: #4a4a4a;
 }
 

@@ -44,7 +44,7 @@ export default class Dropdown extends React.Component {
     ));
     return (
       <div
-        className="Dropdown-box absolute glow ph3 mt2 flex flex-column mr1 z1"
+        className="Dropdown-box absolute glow ph3 mt2 flex flex-column mr1 z-2 bg-white near-black"
         style={{left, width: dropdownWidth}}
       >
         {items}
@@ -57,13 +57,12 @@ export default class Dropdown extends React.Component {
     const {show} = this.state;
     return (
       <div
-        className="Dropdown relative pointer"
-        ref={el => (this.dropdownWrapper = el)}
+        className="Dropdown relative pointer link blue hover-dark-blue"
         onClick={this._handleClick}
         onMouseEnter={() => this._handleHover(true)}
         onMouseLeave={() => this._handleHover(false)}
       >
-        {children}
+        <span ref={el => (this.dropdownWrapper = el)}>{children}</span>
         {show && this._renderDropdown()}
       </div>
     );

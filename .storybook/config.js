@@ -1,5 +1,6 @@
 import React from 'react';
 import {addDecorator, configure, setAddon} from '@storybook/react';
+import {setOptions} from '@storybook/addon-options';
 import JSXAddon from 'storybook-addon-jsx';
 import infoAddon, {setDefaults} from '@storybook/addon-info';
 import '../src/main.css';
@@ -18,6 +19,10 @@ const infoAddonDefaults = {
     };
   },
 };
+
+setOptions({
+  name: 'ROES Styleguide',
+});
 
 setAddon(JSXAddon);
 setDefaults(infoAddonDefaults);
