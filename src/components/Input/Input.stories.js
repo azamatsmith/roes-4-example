@@ -2,10 +2,22 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {action} from '@storybook/addon-actions';
 import {checkA11y} from '@storybook/addon-a11y';
+import {withInfo} from '@storybook/addon-info';
 import Input from './';
 
 storiesOf('Input', module)
   .addDecorator(checkA11y)
+  .add(
+    'all props',
+    withInfo('default')(() => (
+      <Input
+        id="email"
+        label="Email"
+        placeholder="email address"
+        type="email"
+      />
+    ))
+  )
   .addWithJSX('with a placeholder ', () => (
     <Input id="email" label="Email" placeholder="email address" />
   ))
@@ -26,7 +38,4 @@ storiesOf('Input', module)
       type="email"
       onChange={action('onChange')}
     />
-  ))
-  .addWithJSX('non 508 compliant', () => (
-    <Input label="Email" placeholder="email address" type="email" />
   ));
