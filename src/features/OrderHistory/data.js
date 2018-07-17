@@ -18,7 +18,7 @@ export default [
   {
     date: '07/07/10',
     orderedBy: 'MAB',
-    orderNumber: '10-218880',
+    orderNumber: '10-218840',
     orderStatus: 'Pending - Shipment',
     orderType: 'Batteries',
     items: [{name: 'ALKAA', serialNumber: null}],
@@ -45,7 +45,7 @@ export default [
   {
     date: '09/02/09',
     orderedBy: 'MAB',
-    orderNumber: '10-218859',
+    orderNumber: '09-218859',
     orderStatus: 'Complete',
     orderType: 'Custom Hearing Aids',
     serialNumber: null,
@@ -57,7 +57,7 @@ export default [
   {
     date: '05/29/08',
     orderedBy: 'KLG',
-    orderNumber: '10-218880',
+    orderNumber: '08-218880',
     orderStatus: 'Complete',
     orderType: 'Telehealth',
     serialNumber: null,
@@ -66,7 +66,7 @@ export default [
   {
     date: '05/29/08',
     orderedBy: 'KLG',
-    orderNumber: '10-218880',
+    orderNumber: '08-118880',
     orderStatus: 'Complete',
     orderType: 'Telehealth',
     serialNumber: null,
@@ -75,7 +75,7 @@ export default [
   {
     date: '05/07/08',
     orderedBy: 'MAB',
-    orderNumber: '10-218880',
+    orderNumber: '08-311180',
     orderStatus: 'Complete',
     orderType: 'Custom Hearing Aids',
     items: [
@@ -87,7 +87,7 @@ export default [
   {
     date: '05/07/08',
     orderedBy: 'PJU',
-    orderNumber: '10-218880',
+    orderNumber: '08-217880',
     orderStatus: 'Complete',
     orderType: 'Batteries',
     items: [{name: 'ZA312', serialNumber: null}],

@@ -43,7 +43,11 @@ export default class OrderHistory extends React.Component {
             dob="03/04/1965"
             ssn="143-45-3534"
           />
-          <Select label="Ordering Station" style={{width: 220}}>
+          <Select
+            label="Ordering Station"
+            id="ordering-station"
+            style={{width: 220}}
+          >
             <option>791 - Denver</option>
             <option>790 - Lakewood</option>
             <option>789 - Boulder</option>
