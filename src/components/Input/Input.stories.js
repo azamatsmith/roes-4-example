@@ -7,21 +7,10 @@ import Input from './';
 
 storiesOf('Input', module)
   .addDecorator(checkA11y)
-  .add(
-    'all props',
-    withInfo('default')(() => (
-      <Input
-        id="email"
-        label="Email"
-        placeholder="email address"
-        type="email"
-      />
-    ))
-  )
-  .addWithJSX('with a placeholder ', () => (
+  .addWithJSX('with placeholder ', () => (
     <Input id="email" label="Email" placeholder="email address" />
   ))
-  .addWithJSX('with a defaultValue ', () => (
+  .addWithJSX('with defaultValue ', () => (
     <Input
       id="email"
       label="Email"
