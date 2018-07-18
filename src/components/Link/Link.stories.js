@@ -7,14 +7,9 @@ import Link from './';
 
 storiesOf('Link', module)
   .addDecorator(checkA11y)
-  .add(
-    'all props',
-    withInfo('default')(() => (
-      <Link href="https://github.com/wildsmithstudio/roes-4-example">
-        ROES 4
-      </Link>
-    ))
-  )
+  .addWithJSX('default', () => (
+    <Link href="https://github.com/wildsmithstudio/roes-4-example">ROES 4</Link>
+  ))
   .addWithJSX('with target="_blank"', () => (
     <Link
       href="https://github.com/wildsmithstudio/roes-4-example"

@@ -22,6 +22,8 @@ const infoAddonDefaults = {
 
 setOptions({
   name: 'ROES Styleguide',
+  sortStoriesByKind: true,
+  url: 'https://github.com/wildsmithstudio/roes-4-example',
 });
 
 setAddon(JSXAddon);

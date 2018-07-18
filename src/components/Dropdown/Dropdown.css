@@ -1,5 +1,7 @@
 .Dropdown-box {
-  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08); */
+  border: 1px solid #999999;
+  border-radius: 2px;
 }
 
 .Dropdown-box:before {
@@ -14,6 +16,23 @@
   height: 0;
   width: 0;
   border: 8px solid transparent;
+  border-bottom-color: #999;
+  opacity: 1;
+  z-index: 0;
+}
+
+.Dropdown-box:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
   border-bottom-color: #fff;
   opacity: 1;
   z-index: 0;

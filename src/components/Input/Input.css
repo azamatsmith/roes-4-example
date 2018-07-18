@@ -1,4 +1,13 @@
-
 .Input input {
   border: 1px solid #e2e2e2;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+.input-styles {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
 }
