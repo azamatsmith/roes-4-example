@@ -1,7 +1,4 @@
 .SideNav {
   border-right: 1px solid #e2e2e2;
   box-shadow: 0 3px 5px 0 rgba(70, 70, 70, 0.15);
-  min-height: calc(100vh - 60px);
-  position: fixed;
-  margin-top: 60px;
 }

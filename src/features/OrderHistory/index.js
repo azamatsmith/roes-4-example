@@ -55,7 +55,7 @@ export default class OrderHistory extends React.Component {
 
   render() {
     return (
-      <div className="OrderHistory w-100 flex flex-column pa4 bg-light-gray">
+      <div className="OrderHistory w-100 flex flex-column pa4 bg-light-gray pb6">
         <div className="flex mb4 justify-between items-center">
           <SelectedPatient
             name="Zuret, Susan"
